@@ -14,7 +14,7 @@ A clean, beginner‑friendly 2D platformer built with **Godot 4.x** and **GDScri
 - **Engine:** Godot 4.x
 - **Language:** GDScript
 
-## ▶Getting Started
+## Getting Started
 1. **Install Godot 4.x** from https://godotengine.org/.
 2. **Open the project**: `Project > Import`, pick this folder (contains `project.godot`).
 3. Press **Play**. The main scene is already set to `scenes/Main.tscn`.
@@ -23,6 +23,6 @@ A clean, beginner‑friendly 2D platformer built with **Godot 4.x** and **GDScri
 - **Left/Right:** Arrow keys or `A/D`
 - **Jump:** `Space` (or the default `ui_accept` action)
 
-## 🧪 Design Notes
+## Design Notes
 See [`docs/DESIGN.md`](docs/DESIGN.md) for mechanics and signals.
 
