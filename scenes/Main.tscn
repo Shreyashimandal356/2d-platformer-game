@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id=1]
+[ext_resource type="PackedScene" path="res://scenes/Platform.tscn" id=2]
+[ext_resource type="PackedScene" path="res://scenes/Coin.tscn" id=3]
+[ext_resource type="PackedScene" path="res://scenes/Enemy.tscn" id=4]
+[ext_resource type="PackedScene" path="res://scenes/HUD.tscn" id=5]
+
+[node name="Main" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource(5)]
+
+[node name="Player" parent="." instance=ExtResource(1)]
+position = Vector2(-280, -100)
+
+[node name="Ground" parent="." instance=ExtResource(2)]
+position = Vector2(0, 160)
+platform_size = Vector2(900, 24)
+
+[node name="LeftPlatform" parent="." instance=ExtResource(2)]
+position = Vector2(-250, 60)
+platform_size = Vector2(240, 20)
+
+[node name="RightPlatform" parent="." instance=ExtResource(2)]
+position = Vector2(260, -20)
+platform_size = Vector2(240, 20)
+
+[node name="Enemy" parent="." instance=ExtResource(4)]
+position = Vector2(250, -40)
+left_limit = 210.0
+right_limit = 310.0
+speed = 70.0
+
+[node name="Coin1" parent="." instance=ExtResource(3)]
+position = Vector2(-250, 20)
+
+[node name="Coin2" parent="." instance=ExtResource(3)]
+position = Vector2(-180, 20)
+
+[node name="Coin3" parent="." instance=ExtResource(3)]
+position = Vector2(240, -60)
+
+[node name="Coin4" parent="." instance=ExtResource(3)]
+position = Vector2(280, -60)
+
+[node name="Coin5" parent="." instance=ExtResource(3)]
+position = Vector2(0, 120)

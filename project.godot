@@ -1,0 +1,22 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+; If you edit it, please keep the structure intact.
+; Godot Engine 4.x
+
+config_version=5
+
+[application]
+config/name="2D Platformer - Godot"
+run/main_scene="res://scenes/Main.tscn"
+
+[autoload]
+GameState="*res://scripts/game_state.gd"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[rendering]
+renderer/rendering_method="mobile"
+antialiasing/quality/msaa_2d=1
